@@ -25,5 +25,32 @@ public final class StringBuffer{
      append(str);
    }
    
+   /**
+    * 获取字符串长度
+    */
+    public synchronized int length(){
+      return count;
+    }
+    
+  /**
+   * 获取总容量
+   */
+   public synchronized int capacity(){
+     return value.length；
+   }
+   
+  /**
+   * 保证总容量
+   */
+   public synchronized void ensureCapacity(int minimumCapacity){
+     if(minimumCapacity >= value.length){
+       expendCapacity(minimumCapacity);
+     }
+   }
+   
+   /**
+    * 扩展总容量
+    */
+   
    
 }
