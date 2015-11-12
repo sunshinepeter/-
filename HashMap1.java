@@ -2,7 +2,7 @@
 ** hashMap ,xiasong create,11/04/2015
 ** Array + List
 **/
-public class hashMap{
+public class HashMap{
     private static int DFAULT_CAPACITY = 16;//默认容量
     private int capacity;//当前容量
     private int size;//实际数据
